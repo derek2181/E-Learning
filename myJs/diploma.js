@@ -1,0 +1,3 @@
+$("#printer").click(()=>{
+    window.print();
+});

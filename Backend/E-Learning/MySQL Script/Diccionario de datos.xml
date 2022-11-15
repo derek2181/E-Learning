@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Worksheet ss:Name="Table1">
+	<Table>
+		<Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="3" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="4" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="5" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="6" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="7" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="8" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="9" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Column ss:Index="10" ss:AutoFitWidth="0" ss:Width="110"/>
+		<Row>
+			<Cell><Data ss:Type="String">db_name</Data></Cell>
+			<Cell><Data ss:Type="String">table_name</Data></Cell>
+			<Cell><Data ss:Type="String">table_type</Data></Cell>
+			<Cell><Data ss:Type="String">column_name</Data></Cell>
+			<Cell><Data ss:Type="String">column_type</Data></Cell>
+			<Cell><Data ss:Type="String">column_default</Data></Cell>
+			<Cell><Data ss:Type="String">column_key</Data></Cell>
+			<Cell><Data ss:Type="String">is_nullable</Data></Cell>
+			<Cell><Data ss:Type="String">extra</Data></Cell>
+			<Cell><Data ss:Type="String">column_comment</Data></Cell>
+		</Row>
+
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">calificaciones</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioCalifico</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que realizo la Calificación</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">calificaciones</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CursoCalificado</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Curso que fue Calificado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">calificaciones</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UtilidadCalificacion</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Valor de la Calificación (Puede ser 0 como dislike, 1 como like)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">calificaciones</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCalificacion</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario calificó al Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">calificaciones</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoCalificacion</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado de la Calificacion (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">TituloCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(45)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Titulo de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(500)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó la Categoria</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado de la Categoria (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">categorias</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que creó la Categoria</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdComentario</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioComento</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que realizó el Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CursoComentado</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Curso que fue Comentado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionComentario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionComentario</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario comentó al Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">comentarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoComentario</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Comentario (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioComprador</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Usuario que compró el Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CursoComprado</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Curso que fue comprado por el Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCompra</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que se realizó la compra</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ProgresoCursoComprado</Data></Cell>
+			<Cell><Data ss:Type="String">float</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Progreso que el Usuario lleva para terminar el curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FormaPago</Data></Cell>
+			<Cell><Data ss:Type="String">int(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador de la Forma de Pago que usó el Usuario para comprar el Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">Pago</Data></Cell>
+			<Cell><Data ss:Type="String">decimal(19,2)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Cantidad de dinero que el Usuario pagó para comprar el Curso (Es el costo del curso en dicha fecha)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaUltimaVisualizacion</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha más reciente en la que el Usuario vió cualquier Nivel del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">compras</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCompletado</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en la que el Usuario acabó de ver todos los Niveles del Curso en orden</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">curscat</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdCurso</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">curscat</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdCurso</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">TituloCurso</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Titulo del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionCurso</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenCurso</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CostoCurso</Data></Cell>
+			<Cell><Data ss:Type="String">decimal(19,2)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Costo monetario del Curso (en pesos mexicanos)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCurso</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoCurso</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Curso (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">cursos</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que creó el Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">forma_pago</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdFormaPago</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador de la Forma de Pago</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">forma_pago</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FormaPago</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(45)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Tipo de la Forma de Pago (Puede ser Paypal, Tarjeta o Gratis si el curso fue gratis)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioEnvia</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que envió el mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioRecibe</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que recibió el mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó el Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">mensajes</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Mensaje (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdNivel</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">TituloNivel</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Titulo del Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">PathVideoNivel</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(500)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Path del servidor en el que se encuentra alojado el video del Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">PathPDFNivel</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(500)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Path del servidor en el que se encuentra alojado el PDF del Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ContenidoNivel</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Contenido en formato HTML del Nivel (Puede incluir Imagenes, Links y texto con formato)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">NivelGratis</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Campo del Nivel que define si es gratis o no (0 significa que no es gratis, 1 significa que sí lo es)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionNivel</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó el Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoNivel</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Nivel (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">niveles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CursoImpartido</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">MUL</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Curso al que pertenece el Nivel</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">roles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdRol</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Rol</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">roles</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">TipoRol</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(45)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Tipo de Rol (Puede ser Escuela o Estudiante)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String">auto_increment</Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">NombreUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Nombre del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ApellidoPaternoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Apellido Paterno del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ApellidoMaternoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Apellido Materno del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">GeneroUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Genero del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaNacimientoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">date</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que nació el Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenPerfilUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">CorreoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(60)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Correo del Usuario con el cuál iniciará sesión a la página</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">PasswordUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Contraseña del Usuario con la cuál iniciará sesión a la página</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">CURRENT_TIMESTAMP</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó su perfil</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usuarios</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Usuario (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usurol</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">usurol</Data></Cell>
+			<Cell><Data ss:Type="String">table</Data></Cell>
+			<Cell><Data ss:Type="String">IdRol</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">PRI</Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Rol</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">TituloCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(45)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Titulo de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(500)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción de la Categoría</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó la Categoria</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoCategoria</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado de la Categoria (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_categorias_curscat</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que creó la Categoria</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdComentario</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioComento</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que realizó el Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">CursoComentado</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Curso que fue Comentado</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionComentario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Comentario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionComentario</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario comentó al Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoComentario</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Comentario (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">NombreCompletoUsuarioComento</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_comentario_usuariocomento</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenPerfilUsuarioComento</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdCurso</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">TituloCurso</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(100)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Titulo del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionCurso</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenCurso</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen del Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">CostoCurso</Data></Cell>
+			<Cell><Data ss:Type="String">decimal(19,2)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Costo monetario del Curso (en pesos mexicanos)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionCurso</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoCurso</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Curso (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que creó el Curso</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">NombreCompletoUsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenPerfilUsuarioCreador</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_cursos_usuariocreador_calificacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">PorcentajeCalificacion</Data></Cell>
+			<Cell><Data ss:Type="String">float</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioEnvia</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que envió el mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">UsuarioRecibe</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Id del Usuario que recibió el mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">DescripcionMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(800)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Descripción del Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó el Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Mensaje (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">NombreUsuarioEnvia</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenUsuarioEnvia</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">NombreUsuarioRecibe</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(200)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_mensaje_usenvia_usrecibe</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenUsuarioRecibe</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_ultimomensajeconversacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">Usuario_1</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_ultimomensajeconversacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">Usuario_2</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_ultimomensajeconversacion</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionMensaje</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">YES</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó el Mensaje</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">bigint(20)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">NombreUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Nombre del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ApellidoPaternoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Apellido Paterno del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ApellidoMaternoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Apellido Materno del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">GeneroUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Genero del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaNacimientoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">date</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que nació el Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">ImagenPerfilUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">mediumblob</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Imagen de Perfil del Usuario</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">CorreoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(60)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Correo del Usuario con el cuál iniciará sesión a la página</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">PasswordUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(30)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Contraseña del Usuario con la cuál iniciará sesión a la página</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">FechaCreacionUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">datetime</Data></Cell>
+			<Cell><Data ss:Type="String">0000-00-00 00:00:00</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Fecha en que el Usuario creó su perfil</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">EstadoUsuario</Data></Cell>
+			<Cell><Data ss:Type="String">tinyint(1)</Data></Cell>
+			<Cell><Data ss:Type="String">1</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Estado del Usuario (Puede ser 1 si está Activo, 0 si fue dado de baja)</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">IdRol</Data></Cell>
+			<Cell><Data ss:Type="String">int(11)</Data></Cell>
+			<Cell><Data ss:Type="String">0</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Identificador del Rol</Data></Cell>
+		</Row>
+		<Row>
+			<Cell><Data ss:Type="String">e_learning_db</Data></Cell>
+			<Cell><Data ss:Type="String">v_usuario_rol</Data></Cell>
+			<Cell><Data ss:Type="String">view</Data></Cell>
+			<Cell><Data ss:Type="String">TipoRol</Data></Cell>
+			<Cell><Data ss:Type="String">varchar(45)</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">NO</Data></Cell>
+			<Cell><Data ss:Type="String"></Data></Cell>
+			<Cell><Data ss:Type="String">Tipo de Rol (Puede ser Escuela o Estudiante)</Data></Cell>
+		</Row>	</Table>
+</Worksheet>
+</Workbook>

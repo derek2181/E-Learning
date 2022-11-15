@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../myJs/card.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Edit</title>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+
+        <header>
+            <nav class="navbar navbar-light d-flex navbar-style" style="min-height: 65px;">
+
+                <div class="order-1 col-5 px-2 col-lg-3" style="width: auto;">
+                    <button class="navbar-toggler navbar-toggler-icon d-lg-none button-navbar-desplegar" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    </button>
+                    <a class="navbar-brand text-white" href="index.html">
+                        <!-- <img src="img/Logo.png" alt="" style="width: 50px"> -->
+                        <img src="../images/courselogo.png" alt="" class="navbar-imagen ms-lg-2">
+
+                        <!-- class = "position-absolute mx-2 "  -->
+                        E-Learning
+                    </a>
+                </div>
+
+                <div class="order-3 col-12 px-2 mt-1 order-lg-2 col-lg-5 w-xlg-50 w-lg-50 mt-lg-0  col-xl-4">
+                    <form class="d-flex justify-content-center " action="busqueda.html">
+                        <div class="navbar-search-bar col-12 ">
+
+                            <input id="navbar-search-bar" class="navbar-search-bar-input" name="nombreProducto"
+                                type="search" placeholder="Buscar producto" aria-label="Buscar">
+                            <button class="button-navbar-search p-0 mx-2" type="submit"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-2 d-none d-lg-inline">
+                    <a href="addCourse.html" class="btn btn-form-color">Agregar curso</a>
+                </div>
+                <div class="order-2 col-7 d-none d-sm-inline me-3 order-lg-3 col-lg-3" style="width: auto;">
+                    <div style="display: inline;">
+                        <a href="edit.html" class="link-navbar">
+                            <h1 class="label-navbar-sesion d-none d-xl-inline">Bienvenido Luis</h1>
+                            <i class="fas fa-user button-navbar-icons mx-1"></i>
+                        </a>
+                        <a href="sells.html" class="link-navbar">
+                            <i class="fas fa-chart-line button-navbar-icons mx-1"></i>
+                        </a>
+                        <a href="history.html" class="link-navbar">
+                            <i class="fas fa-book  button-navbar-icons mx-1"></i>
+                        </a>
+                        <a href="chat.html" class="link-navbar">
+                            <i class="fas fa-comment button-navbar-icons mx-1"></i>
+                        </a>
+                        <a href="login.html" class="link-navbar">
+                            <i class="fas fa-door-open  button-navbar-icons mx-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+
+            <div class="offcanvas offcanvas-start sub-navbar" style="z-index: 10000001 !important;" tabindex="-1"
+                id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title sub-navbar-title" id="offcanvasExampleLabel">E-Learning</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="row px-0">
+                        <div class="col-12 py-2 linea-top linea-bottom">
+                            <a class="nav-link categories-text" href="edit.html">
+                                Mi cuenta
+                            </a>
+
+                        </div>
+                        <div class="col-12 py-2 linea-bottom">
+                            <a class="nav-link categories-text" href="addCourse.html">
+                                Agregar curso
+                            </a>
+                        </div>
+                        <div class="col-12 py-2 linea-bottom">
+                            <a class="nav-link categories-text" href="sells.html">
+                                Estadisticas
+                            </a>
+                        </div>
+                        <div class="col-12 py-2 linea-bottom">
+                            <a class="nav-link categories-text" href="history.html">
+                                Mis cursos
+                            </a>
+                        </div>
+                        <div class="col-12 py-2 linea-bottom">
+                            <a class="nav-link categories-text" href="login.html">
+                                Cerrar sesión
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="row gx-0">
+                    <div class="col-10 mb-3 ms-3">
+                        <a class="navbar-brand" href="index.html"> <img src="img/Logo.png" alt="" class="w-50">
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row gx-0 p-3">
+                    <h4 class="text-white">Derechos reservados <i class="fas fa-copyright"></i></h4>
+                </div>
+
+            </div>
+        </header>
+
+
+        <main class="bg-light" style="min-height:800px ;">
+            <!-- <div class=" " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Tu compra ha sido procesada</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="display-1 text-success text-center"><i class="fas fa-check-circle"></i></h1>
+                            <h1  class="text-center">Compra éxitosa</h1>
+                        </div>
+                        <div class="modal-footer">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row text-center">
+                <div class="p-5 mb-4 bg-light rounded-3">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-4 fw-light">¡Paso final! </h1>
+                        <hr>
+                        <p class="fs-4 text-center">Estás a punto de pagar la cantidad de: </p>
+                        <h1><strong>MX$1325</strong></h1>
+                        <div id="paypal-button-container" class="mb-4"></div>
+                        <button id="showCardContainer" class="btn btn-dark br-100 p-3 fs-4">Credit card <i class="far fa-credit-card"></i></button>
+
+                    <div class="card-container  m-5 justify-content-center">
+
+                        <div class='card-wrapper'></div>
+                        <div class="d-flex justify-content-center mt-4">
+
+
+                           
+                            <form id="creditcardform">
+                                <div class="mb-3">
+                                    <label for="number" class="form-label">Number</label>
+                                    <input type="text" class="form-control" id="number" name="number">
+                                  </div>
+                                <div class="d-flex">
+                                   
+                                <div>
+                                
+                                <div class="m-1">
+                                  <label for="name" class="form-label">First name</label>
+                                  <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                                <div class="m-1">
+                              
+                                    <label for="expiry" class="form-label">Expiry</label>
+                                    <input type="text" class="form-control" id="expiry" name="expiry">
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="m-1">
+                                    <label for="cvc" class="form-label">cvc</label>
+                                    <input type="text" class="form-control" id="cvc" name="cvc">
+                                  </div>
+                                </div>
+                            </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                              </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #0d0d0e;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">Volver arriba</span>
+                    <a class="btn btn-outline-light btn-rounded" href="#">
+                        <i class="fas fa-arrow-up"></i>
+                    </a>
+                </p>
+            </section>
+            <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright<br>
+              Luis Angel Daniel Sánchez<br>
+              Derek Jafet Cortes Madriz<br>
+            
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.0/chart.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AZfCm9VtjAp93mMsQbOWjtyY84orb9l7pOLgLzFPEXLN8zcPz051A74MMeJTen7Kk_M8iogNikVgLe91&currency=MXN&disable-funding=credit,card"></script>
+
+
+
+    <script src="../API/paypal.js"></script>
+
+    <script src="../myJs/jquery.card.js"></script>
+    <script src="../myJs/card.js"></script>
+    <script>
+
+$('.card-container').hide();
+$('#showCardContainer').click(()=>{
+
+$('.card-container').fadeToggle();
+
+});
+
+    $('#creditcardform').submit(function(e){
+
+        e.preventDefault();
+        alert("Trolie");
+
+    });    
+
+
+    var card = new Card({
+    // a selector or DOM element for the form where users will
+    // be entering their information
+    form: '#creditcardform', // *required*
+    // a selector or DOM element for the container
+    // where you want the card to appear
+    container: '.card-wrapper', // *required*
+
+    formSelectors: {
+        numberInput: 'input#number', // optional — default input[name="number"]
+        expiryInput: 'input#expiry', // optional — default input[name="expiry"]
+        cvcInput: 'input#cvc', // optional — default input[name="cvc"]
+        nameInput: 'input#name' // optional - defaults input[name="name"]
+    },
+
+    width: 300, // optional — default 350px
+    formatting: true, // optional - default true
+
+    // Strings for translation - optional
+    messages: {
+        validDate: 'valid\ndate', // optional - default 'valid\nthru'
+        monthYear: 'mm/yyyy', // optional - default 'month/year'
+    },
+
+    // Default placeholders for rendered fields - optional
+    placeholders: {
+        number: '•••• •••• •••• ••••',
+        name: 'Full Name',
+        expiry: '••/••',
+        cvc: '•••'
+    },
+
+    masks: {
+        cardNumber: '•' // optional - mask card number
+    },
+
+    // if true, will log helpful messages for setting up Card
+    debug: false // optional - default false
+});
+
+    </script>
+<script src="../myJs/jqueryvalidate.min.js"></script>
+<script src="../myJs/validation.js"></script>
+</body>
+
+</html>

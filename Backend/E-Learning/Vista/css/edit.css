@@ -1,0 +1,19 @@
+#profileImage{
+    display:none;
+}
+.edit-label{
+    background:rgba(0, 0, 0, 0.301);
+   color: white;
+   z-index:-1;
+}
+
+#imageLabel{
+    background-size: 200% 100%;
+    background-position: 0% 100%;;
+}
+#success-dialog{
+    display:none;
+}
+#error-dialog{
+    display:none;
+}

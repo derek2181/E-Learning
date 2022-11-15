@@ -1,0 +1,15 @@
+
+
+
+#diploma-content{
+    height:100vh;
+    border:5px solid black;
+    color:rgb(8, 8, 110);
+    
+    /* border-style: dotted; */
+}
+
+@media print { 
+    /* All your print styles go here */
+    header, footer,#buttonContent,#printer { display: none !important; } 
+}

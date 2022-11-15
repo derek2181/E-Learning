@@ -1,0 +1,265 @@
+html{
+    overflow-x:hidden
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+:root {
+    --lightblue: rgb(255, 255, 255);
+    --darkpurple:#241783;
+    --button: #3f4fdb;
+    --button-hover-color:#3644c0;
+    --border-button:#0f4109;
+    --black-green:#072204;
+    --pill-category-color:#1d0b01;
+    
+}
+
+/*ESTILOS A LA PAGINA*/
+button.button-navbar-desplegar:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+header{
+    background-color:var(--darkpurple) !important;
+}
+.main-bg-color{
+    background-color:var(--lightblue) !important;
+}
+/*Se le añadio a los botones del header*/
+.btn-form-color{
+    background:var(--button) !important;
+    color:white;
+}
+.btn-form-color:hover{
+    background:var(--button-hover-color) !important;
+    color:white;
+}
+.text-purple{
+    color:var(--button);
+}
+.btn-header{
+    background:var(--button);
+    color:white !important;
+    border: 1px solid var(--border-button);
+    transition:all 200ms ease-in-out ;
+}
+.btn-header:hover{
+    background:var(--button-hover-color) 
+}
+/*Este es el estilo que llevan las pills al estar activas o inactivas*/
+.btn-active-color{
+    background:var(--button) ;
+    color:white;
+}
+.btn-active-color:focus{
+    background:var(--button) ;
+    color:white;
+}
+.btn-active-color:hover{
+    color:white;
+    background:var(--button-hover-color) 
+}
+.btn-inactive-color{
+    background:none;
+    border:1px solid var(--button);
+    color:var(--button);
+    transition:all 200ms ease-in-out;
+}
+.btn-inactive-color:hover{
+    transform:scale(1.05);
+    color:var(--button);
+}
+.hover-move:hover{
+    -webkit-transform: rotate(-10deg) scale(1.04);
+    -moz-transform: rotate(-10deg) scale(1.04);
+    -o-transform: rotate(-10deg) scale(1.04);
+    
+}
+
+.category-pill-color{
+  background:var(--pill-category-color) !important;
+  color:white;
+  transition:all 300ms ease-in-out;
+}
+
+.category-pill-color:hover{
+    -webkit-transform: rotate(-10deg) scale(1.04);
+    -moz-transform: rotate(-10deg) scale(1.04);
+    -o-transform: rotate(-10deg) scale(1.04);
+}
+/*ESTILOS A LA PAGINA*/
+
+
+.owl-stage{
+    display:flex;
+    align-items: stretch !important;
+}
+
+.owl-item{
+    display:flex;
+    align-items: stretch !important;
+}
+
+
+.container-fluid.my-jumbotron-background{
+    background:rgb(241, 241, 241);
+}
+
+h5.progress-bar-text{
+font-size:14px;
+}
+
+h5.progress-bar-text span{
+    font-size:15px;
+    font-weight:700;
+}
+h5.tutor-name{
+    text-decoration: none;
+    /* font-weight: 50; */
+    font-size:1rem;
+}
+
+img.custom-img-card{
+    height:200px;
+    /* width:200px; */
+}
+a.btn.btn-dark.button-continue-watching{
+    background:linear-gradient(to top, #ffffff 50%, var(--button-hover-color)  50%);
+    color:var(--button-hover-color);
+    background-size:100% 200%;
+    background-position:100% 100%;
+    border:1px var(--button-hover-color) solid ;
+    transition:background-position 0.2s ease-in-out;
+   
+    
+}
+a.btn.btn-dark.button-continue-watching:hover{
+    background-color:white;
+    background-position:100% 200%;
+    color:white;
+  
+}
+
+.text-cut{
+    width:100%; 
+    white-space: nowrap; 
+    overflow: hidden !important; 
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text-no-cut{
+    white-space: wrap;
+    width:80%; 
+}
+a.facebook-button{
+    background-color:#4267B2 !important;
+}
+
+.landing-image{
+    /* background:white  repeat fixed; */
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    height:300px;
+    /* background-position: 100% 30%; */
+    background-image:url('../images/categoryBackground.jpg') !important ;
+}
+
+.btn:focus{
+    outline:none !important;
+    box-shadow: none !important;
+}
+.liked{
+    background:#198754 !important;
+color:white !important;
+}
+
+.disliked{
+    background:#DC3545 !important ;
+    color:white !important;
+}
+#like-button:hover{
+background:#198754;
+color:white;
+}
+
+#dislike-button:hover{
+    background:#DC3545 ;
+    color:white;
+}
+
+.chat-user{
+    text-decoration: none;
+    color:black;
+}
+
+.chat-user:hover>div{
+    text-decoration: none;
+    color:black;
+    background:rgb(241, 241, 241);
+}
+
+#agregarDescCategoria{
+    resize:none;
+}
+
+
+.error-contenedor{
+    margin-top: 5em;
+}
+
+
+
+.error-text{
+    color:rgb(70, 70, 70);
+    display: inline;
+}
+
+
+
+@media (max-width: 768px) {
+    .error-Icono{
+        font-size: 4em;
+    }
+    
+    .error-Titulo{
+        font-size: 2em;
+    }
+    
+    .error-Subtitulo{
+        font-size: 1.5em;
+    }
+    
+    .error-Descripcion{
+        font-size: 1em;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 767.98px) {
+    .error-Icono{
+        font-size: 5em;
+    }
+    
+    .error-Titulo{
+        font-size: 2.5em;
+    }
+    
+    .error-Subtitulo{
+        font-size: 2em;
+    }
+    
+    .error-Descripcion{
+        font-size: 1.3em;
+    }
+}

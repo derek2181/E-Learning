@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../css/widthme.css">
+  <link rel="stylesheet" href="../plugins/css/aksfileupload/aksFileUpload.css">
+  <link rel="stylesheet" href="../plugins/css/tokenize/tokenize2.min.css">
+  <!-- <link rel="stylesheet" href="../plugins/css/Summernote/summernote.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+  <link href="https://vjs.zencdn.net/7.14.3/video-js.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <header>
+      <nav class="navbar navbar-light d-flex navbar-style" style="min-height: 65px;">
+
+        <div class="order-1 col-5 px-2 col-lg-3" style="width: auto;">
+          <button class="navbar-toggler navbar-toggler-icon d-lg-none button-navbar-desplegar" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          </button>
+          <a class="navbar-brand text-white" href="index.html">
+            <!-- <img src="img/Logo.png" alt="" style="width: 50px"> -->
+            <img src="../images/courselogo.png" alt="" class="navbar-imagen ms-lg-2">
+
+            <!-- class = "position-absolute mx-2 "  -->
+            E-Learning
+          </a>
+        </div>
+
+        <div class="order-3 col-12 px-2 mt-1 order-lg-2 col-lg-5 w-xlg-50 w-lg-50 mt-lg-0  col-xl-4">
+          <form class="d-flex justify-content-center " action="busqueda.html">
+            <div class="navbar-search-bar col-12 ">
+
+              <input id="navbar-search-bar" class="navbar-search-bar-input" name="nombreProducto" type="search"
+                placeholder="Buscar producto" aria-label="Buscar">
+              <button class="button-navbar-search p-0 mx-2" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="order-2 d-none d-lg-inline">
+          <a href="addCourse.html" class="btn btn-form-color">Agregar curso</a>
+        </div>
+        <div class="order-2 col-7 d-none d-sm-inline me-3 order-lg-3 col-lg-3" style="width: auto;">
+          <div class="order-2 col-7 d-none d-sm-inline me-3 order-lg-3 col-lg-3" style="width: auto;">
+            <div style="display: inline;">
+              <a href="edit.html" class="link-navbar">
+                <h1 class="label-navbar-sesion d-none d-xl-inline">Bienvenido Luis</h1>
+                <i class="fas fa-user button-navbar-icons mx-1"></i>
+              </a>
+              <a href="sells.html" class="link-navbar">
+                <i class="fas fa-chart-line button-navbar-icons mx-1"></i>
+              </a>
+              <a href="history.html" class="link-navbar">
+                <i class="fas fa-book  button-navbar-icons mx-1"></i>
+              </a>
+              <a href="chat.html" class="link-navbar">
+                <i class="fas fa-comment button-navbar-icons mx-1"></i>
+              </a>
+              <a href="login.html" class="link-navbar">
+                <i class="fas fa-door-open  button-navbar-icons mx-1"></i>
+              </a>
+            </div>
+          </div>
+
+      </nav>
+
+      <div class="offcanvas offcanvas-start sub-navbar" style="z-index: 10000001 !important;" tabindex="-1"
+        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title sub-navbar-title" id="offcanvasExampleLabel">E-Learning</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="row px-0">
+            <div class="col-12 py-2 linea-top linea-bottom">
+              <a class="nav-link categories-text" href="edit.html">
+                Mi cuenta
+              </a>
+
+            </div>
+            <div class="col-12 py-2 linea-bottom">
+              <a class="nav-link categories-text" href="addCourse.html">
+                Agregar curso
+              </a>
+            </div>
+            <div class="col-12 py-2 linea-bottom">
+              <a class="nav-link categories-text" href="sells.html">
+                Estadisticas
+              </a>
+            </div>
+            <div class="col-12 py-2 linea-bottom">
+              <a class="nav-link categories-text" href="history.html">
+                Mis cursos
+              </a>
+            </div>
+            <div class="col-12 py-2 linea-bottom">
+              <a class="nav-link categories-text" href="login.html">
+                Cerrar sesión
+              </a>
+            </div>
+
+
+          </div>
+
+        </div>
+
+        <div class="row gx-0">
+          <div class="col-10 mb-3 ms-3">
+            <a class="navbar-brand" href="index.html"> <img src="img/Logo.png" alt="" class="w-50">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row gx-0 p-3">
+          <h4 class="text-white">Derechos reservados <i class="fas fa-copyright"></i></h4>
+        </div>
+
+      </div>
+    </header>
+
+
+
+    <main class="container-fluid bg-light ">
+
+      <div class="row d-flex">
+        <div class="col-12 col-lg-9 p-0">
+          <video class="video-js" data-setup='{"fluid": true}' controls preload="auto" width="100%" height="650px"
+            data-setup="{}" controls muted>
+            <source muted="true" src="../Videos/5.ProgramaciónenPythonComentarios.mp4" type="video/mp4">
+
+            Tu navegador no puede mostrar este video
+          </video>
+        </div>
+
+        <div class="col-12 col-lg-3 " style="height:650px; overflow-y: scroll;">
+          <div class="row bg-white p-3 border border-1 ">
+
+            <div class="col-8 ">
+              <h5 class="mb-0" style="font-size: 1rem;">Nivel <span>1</span>: Nivel Basico Phyton</h5>
+              <p style="font-size: 0.9rem;">16:57 Min</p>
+            </div>
+
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <a href="" class="btn btn-form-color" style="font-size: 1.1rem;">Ver video</a>
+            </div>
+          </div>
+          <div class="row bg-white p-3 border border-1 ">
+
+            <div class="col-8 ">
+              <h5 class="mb-0" style="font-size: 1rem;">Nivel <span>2</span>: Nivel Medio Phyton</h5>
+              <p style="font-size: 0.9rem;">16:57 Min</p>
+            </div>
+
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <a href="" class="btn btn-form-color" style="font-size: 1.1rem;">Ver video</a>
+            </div>
+          </div>
+
+
+          <div class="row bg-white p-3 border border-1 ">
+
+            <div class="col-8 ">
+              <h5 class="mb-0" style="font-size: 1rem;">Nivel <span>3</span>: Nivel Avanzado Phyton</h5>
+              <p style="font-size: 0.9rem;">16:57 Min</p>
+            </div>
+
+            <div class="col-4 d-flex align-items-center justify-content-center">
+              <a href="" class="btn btn-form-color" style="font-size: 1.1rem;">Ver video</a>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+        <div class="row p-0">
+
+          <div class="col-12 col-lg-9">
+            <div class="p-4">
+
+              <div class="row">
+                <div class="col-12 order-last order-lg-first col-lg-6">
+                  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-active-color me-2" id="courseInfo" data-bs-toggle="pill"
+                        data-bs-target="#pills-preview" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Vista previa</button>
+                    </li>
+                    <li class="nav-item me-2" role="presentation">
+                      <button class="btn btn-inactive-color " id="courseLevels" data-bs-toggle="pill"
+                        data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Reseñas</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="btn btn-inactive-color " id="courseDocument" data-bs-toggle="pill"
+                        data-bs-target="#pills-material" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Documento de apoyo</button>
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div class="col-12 col-lg-6 d-flex justify-content-end">
+                  <h5 class="text-right">Impartido por Alejandro Taboada <a href="chat.html" class=""> <i
+                        class="fas fa-envelope text-purple "></i></a></h5>
+                </div>
+              </div>
+
+
+              <hr>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-preview" role="tabpanel"
+                  aria-labelledby="pills-preview-tab">
+
+                  <!-- AQUI VA TODO LO DE LA PILL DE VISTA PREVIA -->
+                  <p>
+                  <h1>Phyton</h1>
+                  <div ><span
+                      style="color: var(--bs-body-color); font-size: var(--bs-body-font-size); font-weight: var(--bs-body-font-weight); text-align: var(--bs-body-text-align);">En
+                      este nivel veremos:</span></div>
+                  </p>
+                  <ol>
+                    <li>Variables</li>
+                    <li>Funciones</li>
+                    <li>Clases</li>
+                  </ol>
+                  <br>
+
+                  <p>Links de apoyo para el curso:<br><a href="https://www.python.org/" target="_blank">Página oficial del
+                      lenguaje Phyton</a><br><u><b><span style="font-family: 'Comic Sans MS';"><br></span></b></u><img
+                      src="../images/test.jpg"
+                      style="width: 848px;" data-filename="Captura-de-pantalla-de-2019-09-07-04-06-35.png"><u><b><span
+                          style="font-family: 'Comic Sans MS';"><br></span></b></u></p>
+
+
+
+
+
+
+                  <!-- AQUI VA LO DE LA VISTA PREVIA -->
+
+                </div>
+                <div class="tab-pane fade" id="pills-reviews" role="tabpanel" aria-labelledby="pills-reviews-tab">
+
+                  <!-- AQUI VA LO DE LA PILL DE REVIEWS -->
+                  <div class="row">
+
+                    <div class="col-12 mb-3">
+
+                      <form action="viewCourse.html" method="post" id="review_form" class="">
+                        <div class="row my-2">
+
+                          <div class="col-8">
+                            <h3 class="">Deja tu reseña del curso</h3>
+                          </div>
+                          <div class="col-4 d-flex">
+                            <h3 class="me-2">¿Te gustó el curso?</h3>
+
+                            <!-- //TODO: ponerle hovers a estos botones -->
+                            <input type="radio" class="btn-check" name="option" class="required" value="like"
+                              id="option1">
+                              <!-- TODO: PONER LA CLASE .liked  AL LABEL PARA CUANDO YA LE DE LIKE -->
+                            <label id="like-button" class="btn btn-light me-2 " for="option1"><i
+                                class="fas fa-thumbs-up"></i></label>
+
+                            <input type="radio" class="btn-check" name="option" value="dislike" id="option2">
+                            <label id="dislike-button" class="btn btn-light" for="option2"><i
+                                class="fas fa-thumbs-down"></i></label>
+
+
+                          </div>
+                        </div>
+                        <div class="form-floating mb-2">
+                          <textarea name="comment" class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Reseña</label>
+                        </div>
+                        <div id="error-container" class="d-flex flex-column">
+
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-12 d-flex justify-content-center">
+                            <button class="btn btn-form-color btn-lg fs-5">Enviar</button>
+                          </div>
+
+                        </div>
+
+                      </form>
+                    </div>
+
+                  </div>
+
+
+                  <div class="row bg-white mb-3 ">
+                    <div class="col-12  p-3 ">
+
+                      <div class="row">
+                        <div class="col-12 col-lg-10">
+                          <img src="../images/avatar.png" style="border-radius:100%; height:50px; width:50px" alt="">
+                          <span class="ms-2 text-break fw-bold">Jose Gutierrez</span>
+
+                        </div>
+
+                        <div class="col-12 col-lg-2">
+
+                          <span class="fw-light">07/AGO/21</span>
+
+                          <!-- <span class="fs-2 ms-2 "><i class="fas fa-thumbs-up text-success"></i></span> -->
+                        </div>
+
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-12">
+                      <p class="fw-light text-break text-wrap">Buen curso, solo creo que seria bueno separar entre un "Python desde cero" y un "Introduccion a la programacion desde cero con Python" ya se hace un poco tedioso para los que saben programar y venimos mas que nada a aprender la sintaxis y las peculiaridades del lenguaje. Solo ese detalle, el contenido muy bueno, pasa por los modulos mas comunes y es un buen punto de partida para "tirarse a la piscina" y profundizar por cuenta propia.</p>
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="row bg-white mb-3 ">
+                    <div class="col-12   p-3 ">
+
+                      <div class="row">
+                        <div class="col-12 col-lg-2 ">
+                          <img src="../images/avatar.png" style="border-radius:100%; height:50px; width:50px" alt="">
+                          <span class="ms-2 text-break fw-bold">Mario Recalde</span>
+
+                        </div>
+
+                        <div class=" col-12 col-lg-2">
+
+                          <span class="fw-light">07/AGO/21</span>
+
+                          <!-- <span class="fs-2 ms-2 "><i class="fas fa-thumbs-down text-danger"></i></span> -->
+                        </div>
+
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-12">
+                      <p class="fw-light text-break text-wrap">Excelente curso, ha sido en ocasiones un reto, pero el instructor explica tan bien que es posible avanzar y espero completarlo ya pronto. Con este curso inicio mi aventura de ser un desarrollador en Python.... :-)</p>
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="row bg-white mb-3 ">
+                    <div class="col-12  p-3 ">
+
+                      <div class="row">
+                        <div class="col-12 col-lg-10">
+                          <img src="../images/avatar.png" style="border-radius:100%; height:50px; width:50px" alt="">
+                          <span class="ms-2 text-break fw-bold">Alvaro Llamas Calvo</span>
+
+                        </div>
+
+                        <div class="col-12 col-lg-2">
+
+                          <span class="fw-light">07/AGO/21</span>
+
+                          <!-- <span class="fs-2 ms-2 "><i class="fas fa-thumbs-down text-danger"></i></span> -->
+                        </div>
+
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div class="col-12">
+                      <p class="fw-light text-break text-wrap">Alejandro explica de maravilla y el curso es perfecto si empiezas desde prácticamente cero (mi caso). Le doy la máxima puntuación porque considero que he aprendido muchísimo. 100% recomendable.</p>
+                    </div>
+
+
+                  </div>
+
+
+
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <button class="btn btn-success w-100">Cargar más</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-material" role="tabpanel" aria-labelledby="pills-material-tab">
+                  <div class="row p-0">
+
+                    <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                      <a target="_blank" class="btn btn-form-color my-4"
+                        href="../Backend/E-Learning/Vista/PDF/FE-PWCI_AgoDic-2021(03).pdf">Abrir en el navegador</a>
+                      <iframe src="../Backend/E-Learning/Vista/PDF/FE-PWCI_AgoDic-2021(03).pdf" width="100%"
+                        height="800px">
+
+
+                      </iframe>
+                    </div>
+
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+        <!--  -->
+    </main>
+    <footer class="text-center text-white" style="background-color: #0d0d0e;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Volver arriba</span>
+            <a class="btn btn-outline-light btn-rounded" href="#">
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright<br>
+              Luis Angel Daniel Sánchez<br>
+              Derek Jafet Cortes Madriz<br>
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://vjs.zencdn.net/7.14.3/video.min.js"></script>
+  <script src="../myJs/viewCourse.js"></script>
+
+  <script src="../myJs/jqueryvalidate.min.js"></script>
+  <script src="../myJs/validation.js"></script>
+
+
+</body>
+
+</html>
